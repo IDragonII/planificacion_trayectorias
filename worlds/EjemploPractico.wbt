@@ -1,0 +1,142 @@
+#VRML_SIM R2025a utf8
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+WorldInfo {
+}
+Viewpoint {
+  position 2.5 1.875 10
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation 2.5 1.875 0
+  size 5 3.75
+}
+Solid {
+  translation 2.5 0 1.25
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.5 0.5 0.5 }
+      geometry Box { size 5 0.2 2.5 }
+    }
+  ]
+  name "pared_norte"
+  boundingObject Box { size 5 0.2 2.5 }
+}
+Solid {
+  translation 2.5 3.75 1.25
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.5 0.5 0.5 }
+      geometry Box { size 5 0.2 2.5 }
+    }
+  ]
+  name "pared_sur"
+  boundingObject Box { size 5 0.2 2.5 }
+}
+Solid {
+  translation 0 1.875 1.25
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.5 0.5 0.5 }
+      geometry Box { size 0.2 3.75 2.5 }
+    }
+  ]
+  name "pared_oeste"
+  boundingObject Box { size 0.2 3.75 2.5 }
+}
+Solid {
+  translation 5 1.875 1.25
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.5 0.5 0.5 }
+      geometry Box { size 0.2 3.75 2.5 }
+    }
+  ]
+  name "pared_este"
+  boundingObject Box { size 0.2 3.75 2.5 }
+}
+Solid {
+  translation 2.375 1.75 1.25
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.7 0.7 0.7 }
+      geometry Box { size 3.25 2 2.5 }
+    }
+  ]
+  name "bloque_central"
+  boundingObject Box { size 3.25 2 2.5 }
+  locked TRUE
+}
+Solid {
+  translation 2.5 3.25 0.5
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.7 0.7 0.7 }
+      geometry Box { size 0.5 0.3 0.9 }
+    }
+  ]
+  name "cabinet_1"
+  boundingObject Box { size 0.5 0.3 0.9 }
+}
+Solid {
+  translation 2.75 3.25 0.5
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.7 0.7 0.7 }
+      geometry Box { size 0.5 0.3 0.9 }
+    }
+  ]
+  name "cabinet_2"
+  boundingObject Box { size 0.5 0.3 0.9 }
+}
+Solid {
+  translation 4.5 1.75 0.45
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.5 0.3 0.1 }
+      geometry Cylinder { height 0.45 radius 0.2 }
+    }
+    Shape {
+      appearance PBRAppearance { baseColor 0.6 0.4 0.2 }
+      geometry Box { size 0.35 0.35 0.05 }
+    }
+  ]
+  name "chair_1"
+  boundingObject Cylinder { height 0.45 radius 0.2 }
+}
+Robot {
+  translation 2.25 0.25 0.9
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.8 0.6 0.4 }
+      geometry Cylinder { height 1.6 radius 0.15 }
+    }
+    Shape {
+      appearance PBRAppearance { baseColor 0.3 0.2 0.1 }
+      geometry Sphere { radius 0.2 }
+    }
+  ]
+  name "pedestrian"
+  boundingObject Cylinder { height 1.6 radius 0.2 }
+}
+DEF ROBOT Solid {
+  translation 0.25 0.25 0.1
+  children [
+    Shape {
+      appearance PBRAppearance { baseColor 0.1 0.1 0.8 }
+      geometry Cylinder { height 0.2 radius 0.15 }
+    }
+  ]
+  name "robot"
+  boundingObject Cylinder { height 0.2 radius 0.15 }
+}
+Robot {
+  translation -1 -1 0
+  name "supervisor"
+  controller "supervisor_control"
+  supervisor TRUE
+}

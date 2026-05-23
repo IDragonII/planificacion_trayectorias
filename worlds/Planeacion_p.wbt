@@ -1,0 +1,455 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/kuka/youbot/protos/Youbot.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Door.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Window.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Sofa.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/plants/protos/PottedTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Desk.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/paintings/protos/LandscapePainting.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/RoundTable.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/chairs/protos/Chair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/living_room_furniture/protos/Armchair.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.41087220721573553 -0.12151822976445452 0.9035581603707551 3.8562068863257046
+  position 0.8824316498914013 4.593248077900003 7.169355623843136
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 4 3 0
+  floorSize 16 11
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 2.5
+}
+Pedestrian {
+  translation 4.32 0.48 1.26
+  rotation 0 0 1 3.14159
+}
+Pedestrian {
+  translation 2.13 2.11 1.24
+  rotation 0 0 1 -1.5707953071795862
+  name "pedestrian(3)"
+}
+Pedestrian {
+  translation 10.38 5.78 1.26
+  rotation 0 0 1 3.14159
+  name "pedestrian(2)"
+}
+Pedestrian {
+  translation 7.38 1.11 1.25
+  rotation 0 0 -1 -1.5707953071795862
+  name "pedestrian(1)"
+}
+LandscapePainting {
+  translation -0.86 8.44 1.58
+  rotation 0 0 -0.9999999999999999 1.5707953071795862
+}
+LandscapePainting {
+  translation -1.15 3.72 1.58
+  rotation 0 0 1 1.5708
+  name "landscape painting(2)"
+}
+LandscapePainting {
+  translation -1.16 2.81 1.58
+  rotation 0 0 -0.9999999999999999 1.5707953071795862
+  name "landscape painting(1)"
+}
+Desk {
+  translation -0.88 8.08 0
+  rotation 0 0 1 -1.5707953071795862
+}
+Sofa {
+  translation 1.08 8 0
+  rotation 0 0 1 -1.5707953071795862
+}
+PottedTree {
+  translation 2.46 8.16 0
+}
+PottedTree {
+  translation 3.14 1.01 0
+  name "potted tree(1)"
+}
+PottedTree {
+  translation 0.39 2.39 0
+  name "potted tree(2)"
+}
+PottedTree {
+  translation 0.39 4.18 0
+  name "potted tree(3)"
+}
+Door {
+  hidden translation_5 0.0011418752636644658 2.954768478985459e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 5.239456986569211e-11 -1.8599276199334218e-10 -5.671231650964189e-06
+  hidden angularVelocity_5 -2.2315921551183385e-06 1.1908231198118676e-07 -1.2719765213312345e-10
+  translation -2.52 -2.01 0
+  size 0.1 1 2.4
+  position -0.0002986754737379385
+}
+Door {
+  hidden translation_5 0.0011418752636645907 2.954768478985459e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 -1.8598981272934044e-10 -5.239464796018374e-11 -5.6712316509640966e-06
+  hidden angularVelocity_5 1.1908003659750461e-07 2.231592276413134e-06 -1.2719179152597058e-10
+  translation 9.32 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "door(2)"
+  size 0.1 1 2.4
+  position -0.0002986754737381948
+}
+Door {
+  hidden translation_5 0.0011418752636646184 2.95476847899101e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 -1.8599523874406973e-10 -5.239356446109847e-11 -5.671231651618141e-06
+  hidden angularVelocity_5 1.1908003660711133e-07 2.2315922764127493e-06 -1.2718957038896765e-10
+  translation 6.45 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "door(3)"
+  size 0.1 1 2.4
+  position -0.00029867547373838775
+}
+Door {
+  hidden translation_5 0.001141875263664549 2.954768478985459e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 1.8598982324084488e-10 5.2394070331785585e-11 -5.671231650963921e-06
+  hidden angularVelocity_5 -1.1907411487816335e-07 -2.231592592488926e-06 -1.2719892773274137e-10
+  translation 5.35 -0.250002 0
+  rotation 0 0 1 1.5708
+  name "door(4)"
+  size 0.1 1 2.4
+  position -0.00029867547373812103
+}
+Door {
+  hidden translation_5 0.0011418752636645213 2.954768478985459e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 1.8599532444633378e-10 5.2393937315281226e-11 -5.671231650963838e-06
+  hidden angularVelocity_5 -1.1907411487822998e-07 -2.231592592548719e-06 -1.2719829825390839e-10
+  translation 6.96 -0.250001 0
+  rotation 0 0 1 1.5708
+  name "door(5)"
+  size 0.1 1 2.4
+  position -0.0002986754737380643
+}
+Door {
+  hidden translation_5 0.0011418752636645074 2.954768478985459e-05 -1.7763568394002505e-15
+  hidden rotation_5 0 0 -1 0.000298675473326152
+  hidden linearVelocity_5 5.239438140435464e-11 -1.8599549395587545e-10 -5.671231650870507e-06
+  hidden angularVelocity_5 -2.2315921551183114e-06 1.1908231198123095e-07 -1.271972639917351e-10
+  translation -2.52 7.94 0
+  name "door(1)"
+  size 0.1 1 2.4
+  position -0.0002986754737380386
+}
+Wall {
+  translation -2.52 -1.03 0
+  size 0.1 1 2.4
+}
+Wall {
+  translation 0.53 -1.4 0
+  name "wall(13)"
+  size 0.1 2.2 2.4
+}
+Wall {
+  translation 6.11 -1.4 0
+  name "wall(18)"
+  size 0.1 2.2 2.4
+}
+Wall {
+  translation 1.16 -0.29 0
+  rotation 0 0 1 1.5708
+  name "wall(14)"
+  size 0.1 1.3 2.4
+}
+Wall {
+  translation 1.16 -0.29 0
+  rotation 0 0 1 1.5708
+  name "wall(16)"
+  size 0.1 1.3 2.4
+}
+Wall {
+  translation 11.13 -0.289975 0
+  rotation 0 0 1 1.5708
+  name "wall(20)"
+  size 0.1 1.7 2.4
+}
+Wall {
+  translation -2.52 7.24 0
+  name "wall(5)"
+  size 0.1 0.4 2.4
+}
+Wall {
+  translation -2.52 3.7 0
+  name "wall(4)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation 8.34 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(6)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation 7.44 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(9)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation 3.3 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(10)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation 9.93 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(8)"
+  size 0.1 0.3 2.4
+}
+Wall {
+  translation 5.82 6.71 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(12)"
+  size 0.1 0.3 2.4
+}
+Wall {
+  translation 4.71 -0.26 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(15)"
+  size 0.1 0.3 2.4
+}
+Wall {
+  translation 6 -0.26 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(17)"
+  size 0.1 0.3 2.4
+}
+Wall {
+  translation 6.31 -0.26 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(19)"
+  size 0.1 0.3 2.4
+}
+Wall {
+  translation 7.88 7.56 0
+  rotation 0 0 1 1.01503e-06
+  name "wall(7)"
+  size 0.1 1.8 2.4
+}
+Wall {
+  translation 2.84 7.56 0
+  rotation 0 0 1 1.01503e-06
+  name "wall(11)"
+  size 0.1 1.8 2.4
+}
+Wall {
+  translation -2.52 2.75 0
+  name "wall(1)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation -2.52 3.75 0
+  name "wall(3)"
+  size 0.1 1 2.4
+}
+Wall {
+  translation -3.24 3.28 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(2)"
+  size 0.1 1.5 2.4
+}
+Wall {
+  translation -1.14 3.28 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(33)"
+  size 0.9 2.7 2.4
+}
+Window {
+  translation -2.51 0.85 0
+  size 0.1 2.8 2.4
+}
+Window {
+  translation 3.19 -0.27 0
+  rotation 0 0 1 1.5708
+  name "window(4)"
+  size 0.1 2.8 2.4
+}
+Window {
+  translation 8.87 -0.269983 0
+  rotation 0 0 1 1.5708
+  name "window(5)"
+  size 0.1 2.8 2.4
+}
+Window {
+  translation -2.51 5.64 0
+  name "window(1)"
+  size 0.1 2.8 2.4
+}
+Window {
+  translation 11.03 6.71008 0
+  rotation 0 0 -1 -1.5708053071795867
+  name "window(2)"
+  size 0.1 1.9 2.4
+}
+Window {
+  translation 4.74 6.71007 0
+  rotation 0 0 -1 -1.5708053071795867
+  name "window(3)"
+  size 0.1 1.9 2.4
+}
+Youbot {
+  hidden position_0_0 0.018602898392322362
+  hidden position_0_1 0.02068619209402093
+  hidden position_0_2 1.30968435959138e-05
+  hidden position_0_3 -2.2645564067122966e-06
+  hidden position_1_0 -1.0859298051779716e-06
+  hidden rotation_2 0 0 -1 1.0860483144693865e-06
+  hidden position_2_0 -0.03367709612544938
+  hidden rotation_3 0 0.9999999999999999 0 0.03367709612544912
+  hidden position_3_0 -1.1854798607306463e-06
+  hidden rotation_4 0 1 0 1.1853684068531772e-06
+  hidden position_4_0 -2.449538633491662e-07
+  hidden rotation_5 0 1 0 2.4575624618635555e-07
+  hidden position_5_0 5.990864510151832e-08
+  hidden position_6_0 8.93622201463289e-06
+  hidden position_6_1 1.27264581322012e-05
+  hidden translation_7 0 8.93622201463289e-06 0.09
+  hidden translation_8 0 -1.27264581322012e-05 0.09
+  hidden rotation_9 0 1 0 0.018602898392316533
+  hidden rotation_10 0 1 0 0.02068619209401727
+  hidden rotation_11 0 0.9999999999999999 0 1.3096857674585925e-05
+  hidden rotation_12 0 -1 0 2.2645843316929203e-06
+  translation -1.83162 -1.85853 0.0952332
+  rotation 0.0002522974942644513 -0.0008613635205963203 0.9999995971993488 0.7200125131238433
+  name "robot"
+  controller "planeacion_control"
+  supervisor TRUE
+}
+RoundTable {
+  translation 5.47 3.15 0
+}
+RoundTable {
+  translation 9.3 3.15 0
+  name "round table(1)"
+}
+Chair {
+  translation 3.89 3.21 0
+}
+Chair {
+  translation 6.92 3.21 0
+  rotation 0 0 1 3.14159
+  name "chair(3)"
+}
+Chair {
+  translation 7.93 3.21 0
+  name "chair(1)"
+}
+Chair {
+  translation 9.34 1.64 0
+  rotation 0 0 1 1.5708
+  name "chair(4)"
+}
+Chair {
+  translation 5.42 1.64 0
+  rotation 0 0 1 1.5708
+  name "chair(7)"
+}
+Chair {
+  translation 9.34 4.65 0
+  rotation 0 0 1 -1.5707953071795862
+  name "chair(5)"
+}
+Chair {
+  translation 5.47 4.65 0
+  rotation 0 0 1 -1.5707953071795862
+  name "chair(6)"
+}
+Chair {
+  translation 10.79 3.21 0
+  rotation 0 0 1 3.14159
+  name "chair(2)"
+}
+Wall {
+  translation 3.9 1.92 0
+  name "wall(21)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 7.41 1.92 0
+  rotation 1 0 0 4.692820414042842e-06
+  name "wall(24)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 10.82 1.92 0
+  name "wall(23)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 10.82 4.43 0
+  name "wall(30)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 7.43 4.43 0
+  name "wall(31)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 3.89 4.43 0
+  name "wall(32)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 4.14 1.67 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(22)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 4.14 4.67 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(29)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 10.58 1.67 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(26)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 10.58 4.69 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(27)"
+  size 0.5 1 0.7
+}
+Wall {
+  translation 7.41 1.67 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(25)"
+  size 0.5 2.5 0.7
+}
+Wall {
+  translation 7.41 4.68 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(28)"
+  size 0.5 2.5 0.7
+}
+Armchair {
+  translation 0.82 3.28 -0.15
+}
